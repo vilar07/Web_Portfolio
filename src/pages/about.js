@@ -3,7 +3,7 @@ import Head from 'next/head'
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
-import profilePicTiago from "../../public/images/profile/tiagovilar.JPG";
+import profilePicTiago from "../../public/images/profile/tiagovilar.jpg";
 import Image from 'next/image';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
