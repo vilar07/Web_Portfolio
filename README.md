@@ -4,4 +4,8 @@
 pip install -r requirements.txt
  
 # To run
-npm run dev
+npm run dev~
+
+Live Demo:
+https://vilar07.github.io/Web_Portfolio/
+
