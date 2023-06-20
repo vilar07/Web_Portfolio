@@ -5,7 +5,9 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import project1 from "../../public/images/projects/web_portfolio.jpg"
+import project2 from "../../public/images/projects/webAppFinder.jpg"
+import project3 from "../../public/images/projects/petLink.jpg"
 
 
 const FeaturedProject = ({type, title, summary, img, link = '', github = ''}) => {
@@ -17,7 +19,7 @@ const FeaturedProject = ({type, title, summary, img, link = '', github = ''}) =>
             <Link href={link} target="_blank"
             className='w-1/2 cursor-pointer overflow-fidden rounded-lg'
             >
-                <Image src={img} alt={title} className='w-full h-auto'/>
+                <Image src={img} alt={title} className='w-full h-auto border rounded-2xl'/>
             </Link>
 
             <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
@@ -45,7 +47,7 @@ const Project = ({type, title, img, link = '', github = ''}) => {
             <Link href={link} target="_blank"
             className='w-full cursor-pointer overflow-fidden rounded-lg'
             >
-                <Image src={img} alt={title} className='w-full h-auto'/>
+                <Image src={img} alt={title} className='w-full h-auto border rounded-2xl'/>
             </Link>
 
             <div className='w-full flex flex-col items-start justify-between mt-4'>
@@ -89,19 +91,19 @@ const projects = () => {
                     </div>
                     <div className='col-span-6'>
                         <Project
-                        title="Web Portfolio"
+                        title="WebApp Event Finder"
                         link="/"
                         type="Featured Project"
-                        img={project1}
+                        img={project2}
                         github="https://github.com/vilar07/Web_Portfolio"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                        title="Web Portfolio"
+                        title="PetLink"
                         link="/"
                         type="Featured Project"
-                        img={project1}
+                        img={project3}
                         github="https://github.com/vilar07/Web_Portfolio"
                         />
                     </div>
