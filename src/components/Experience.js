@@ -15,8 +15,8 @@ const Details = ({position, company, companyLink, time, address, work}) => {
             >
                 <h3 className='capitalize font-bold text-2xl'>{position}&nbsp;<a href={companyLink}
                  target='_blank'
-                 className='text-green capitalize'>@{company}</a></h3>
-                <span className='capitalize font-medium text-dark/75'>
+                 className='text-green dark:text-primaryDark capitalize'>@{company}</a></h3>
+                <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
                     {time} | {address}
                 </span>
                 <p className='font-medium w-full'>
@@ -45,7 +45,7 @@ const Experience = () => {
 
             <motion.div
             style={{scaleY: scrollYProgress}}
-            className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'/>
+            className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top'/>
                 <ul className='w-full flex flex-col items-center justify-between ml-24'>
                     <Details 
                     position="Student" company="Aveiro University" companyLink="https://www.ua.pt/"
