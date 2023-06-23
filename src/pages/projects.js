@@ -19,7 +19,10 @@ const FeaturedProject = ({type, title, summary, img, link = '', github = ''}) =>
             <Link href={link} target="_blank"
             className='w-1/2 cursor-pointer overflow-fidden rounded-lg'
             >
-                <Image src={img} alt={title} className='w-full h-auto border rounded-2xl'/>
+                <Image src={img} alt={title} className='w-full h-auto border rounded-2xl'
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                />
             </Link>
 
             <div className='w-1/2 flex flex-col items-start justify-between pl-6 dark:text-light'>
