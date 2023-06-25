@@ -57,14 +57,16 @@ const TwitterIcon = ({className, ...rest}) => (
   export const FacebookIcon = ({ className, ...rest }) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
+      width="2.2em"
+      height="2.2em"
       viewBox="0 0 512 512"
+      className={className}
       {...rest}
-      className={`w-full h-auto ${className}`}
     >
-      <path fill="#1877f2" d="M256 32C132.3 32 32 134.9 32 261.7c0 127.7 100.3 229.7 224 229.7s224-102 224-229.7C480 134.9 379.7 32 256 32Z" />
-      <path fill="#fff" d="M296.9 255.6h-39.5v-63.8c0-14.6 7.8-22.9 23.6-22.9h13.6V141h-18.2c-27.6 0-40.8 13.2-40.8 39.1v23.4h-26v37.3h26v95.3c0 33.9 20.7 52.4 50.8 52.4h32.2V255.6z" />
+      <path
+        fill="#1877f2"
+        d="M472 24H40C17.9 24 0 41.9 0 64v384c0 22.1 17.9 40 40 40h160V312h-56v-64h56v-48c0-56.1 43.4-104 99.1-104h72v64h-40.2c-16.8 0-23.8 7.5-23.8 20.6V248h64l-10.2 64h-53.8v168h101.9c22.1 0 40-17.9 40-40V64c0-22.1-17.9-40-40-40z"
+      />
     </svg>
   );
 

@@ -37,7 +37,7 @@ const Education = () => {
     )
   return (
     <div className='my-64'>
-        <h2 className='font-bold text-8xl mb-32 w-full text-center'>
+        <h2 className='font-bold text-8xl mb-32 w-full text-center lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'>
             Education
         </h2>
 
@@ -46,7 +46,7 @@ const Education = () => {
             <motion.div
             style={{scaleY: scrollYProgress}}
             className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top'/>
-                <ul className='w-full flex flex-col items-center justify-between ml-24'>
+                <ul className='w-full flex flex-col items-center justify-between ml-12'>
                     <Details 
                     position="Student" company="Aveiro University" companyLink="https://www.ua.pt/"
                     time="2019-2022" address="Universidade de Aveiro, 3810-193 Aveiro"

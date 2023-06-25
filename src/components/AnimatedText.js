@@ -24,7 +24,7 @@ const singleWord ={
       opacity:1,
       y:0,
       transition:{
-          duration:1 //duration of animation
+          duration:1.5 //duration of animation
       }
   },
 
