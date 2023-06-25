@@ -48,7 +48,7 @@ const about = () => {
                 <AnimatedText text='Passion Fuels Purpose!' className='mb-16 text-center lg:!text-7xl sm:!text-6xl xs:!text-4sl' />
             
                 <div className='grid w-full grid-cols-8 gap-16 sm:gap-8 '>
-                    <div className=' col-span-3 flex flex-col items-start justify-start  xl:col-span-4 '>
+                    <div className=' col-span-3 flex flex-col   xl:col-span-4 '>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
                         <p className='font-medium break-words'>
                         - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
