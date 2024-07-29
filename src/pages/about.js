@@ -53,7 +53,7 @@ const about = () => {
                     <div className=' w-full col-span-3 flex flex-col xl:col-span-4 md:order-2 md:col-span-8'>
                         <h2 className='w-full mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                         <p className='w-full font-medium break-words font-serif text-2xl'>
-                        I am a 23-year-old full-stack web developer with a degree in Computer Engineering and Informatics, and a Master&apos;s degree in Computer Engineering and Telematics from the University of Aveiro.
+                        My name is Tiago Miguel Vilar Bastos and i am a 23-year-old full-stack web developer with a degree in Computer Engineering and Informatics, and a Master&apos;s degree in Computer Engineering and Telematics from the University of Aveiro.
                         </p>
                         <p></p>
                         <p className='w-full font-medium break-words font-serif text-2xl'>
