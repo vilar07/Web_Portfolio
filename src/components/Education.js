@@ -55,8 +55,8 @@ const Education = () => {
 
                     <Details 
                     position="Student" company="Aveiro University" companyLink="https://www.ua.pt/"
-                    time="2022-Present" address="Universidade de Aveiro, 3810-193 Aveiro"
-                    work="I'm taking a master's degree in computer engineering and telematics"               
+                    time="2022-2024" address="Universidade de Aveiro, 3810-193 Aveiro"
+                    work="Completed a master's degree in computer engineering and telematics"               
                     /> 
                 </ul>
         </div>

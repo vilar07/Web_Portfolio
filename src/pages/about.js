@@ -50,22 +50,12 @@ const about = () => {
                 <AnimatedText text='Passion Fuels Purpose!' className='mb-16 text-center lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:px-24' />
             
                 <div className='grid w-full grid-cols-8 gap-16 sm:gap-8 sm:px-24 '>
-                    <div className=' col-span-3 flex flex-col xl:col-span-4 md:order-2 md:col-span-8'>
-                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
-                        <p className='font-medium break-words'>
-                        - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                        </p>
-                        <p className='my-4 font-medium break-words '>
-                        - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                        </p>
-                        <p className='font-medium break-words'>
-                        - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                    <div className=' w-full col-span-3 flex flex-col xl:col-span-4 md:order-2 md:col-span-8'>
+                        <h2 className='w-full mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
+                        <p className='w-full font-medium break-words font-serif text-2xl'>
+                        I am a 23-year-old full-stack web developer with a Bachelor's degree in Computer Engineering and Informatics, and a Master's degree in Computer Engineering and Telematics from the University of Aveiro.</p>
+                        <p></p>
+                        <p className='w-full font-medium break-words font-serif text-2xl'>I specialize in creating user-friendly web interfaces and robust cloud-based solutions using technologies like Next.js, NestJS, and various databases. With a passion for technology and innovation, I excel in developing efficient and scalable applications. I am committed to continuous learning and staying updated with the latest industry trends to deliver high-quality projects that drive business success.
                         </p>
                     </div>
                     <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light

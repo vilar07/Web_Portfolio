@@ -42,8 +42,11 @@ const Skills = () => {
             <Skill name="C/C++" x="-23vw" y="16vw"/>
             <Skill name="Computer Networks" x="-30vw" y="-5vw"/>
             <Skill name="DataBases" x="25vw" y="15vw"/>
-            <Skill name="SQL" x="5vw" y="-20vw"/>
+            <Skill name="SQL" x="0vw" y="-20vw"/>
             <Skill name="Tailwind CSS" x="-0" y="22vw"/>
+            <Skill name="NestJS" x="-15vw" y="-22vw"/>
+            <Skill name="AWS" x="15vw" y="-22vw"/>
+            <Skill name="Cloud" x="13vw" y="0vw"/>
 
         </div>
     </>

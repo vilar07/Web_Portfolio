@@ -8,6 +8,8 @@ import { GithubIcon } from '@/components/Icons'
 import project1 from "../../public/images/projects/web_portfolio.jpg"
 import project2 from "../../public/images/projects/webAppFinder.jpg"
 import project3 from "../../public/images/projects/petLink.jpg"
+import svcortinados from "../../public/images/projects/svcortinados.png"
+import servicoNutricional from "../../public/images/projects/servicoNutricional.png"
 import TransitionEffect from '@/components/TransitionEffect'
 
 
@@ -39,7 +41,7 @@ const FeaturedProject = ({type, title, summary, img, link = '', github = ''}) =>
                     <Link href={github} target="_blank" className='w-10'><GithubIcon/></Link>
                     <Link href={link} target="_blank" className='ml-4 rounded-lg bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 text-lg font-semibold
                     hover:bg-light hover:text-dark border-2 border-solid border-dark hover:dark:border-light hover:dark:text-light
-                    hover:dark:bg-dark sm:px-4 sm:text-base'>Visit Project</Link>
+                    hover:dark:bg-dark sm:px-4 sm:text-base'>Visit Website</Link>
                 </div>
             </div>
         </article>
@@ -95,10 +97,20 @@ const projects = () => {
                         <FeaturedProject
                         title="Web Portfolio"
                         summary="This is my web portfolio. It was built using Next.js, Tailwind CSS, and Framer Motion."
-                        link="/"
+                        link="https://vilar07.github.io/Web_Portfolio"
                         type="Featured Project"
                         img={project1}
                         github="https://github.com/vilar07/Web_Portfolio"
+                        />
+                    </div>
+                    
+                    <div className='col-span-12 '>
+                        <FeaturedProject
+                        title="Silvia Vilar Cortinados"
+                        summary="This is an simple website with admin authentication and dasboard to admin to create and manage publications. It was built using Next.js, Tailwind CSS, Framer Motion, Nestjs, Mysql and for cloud Aws and Vercel."
+                        link="https://svcortinados.com"
+                        type="Featured Project"
+                        img={svcortinados}
                         />
                     </div>
                     <div className='col-span-6 sm:col-span-12'>
@@ -121,30 +133,11 @@ const projects = () => {
                     </div>
                     <div className='col-span-12 '>
                         <FeaturedProject
-                        title="Web Portfolio"
-                        summary="This is my web portfolio. It was built using Next.js, Tailwind CSS, and Framer Motion."
+                        title="Nutritional Service"
+                        summary="This is a full stack website, with dashboard for nutritionists to create content for the app and to manage users. It was developed algorithms for prediction and recommendation. It was built using Next.js, Tailwind CSS, Framer Motion, Nestjs, Mysql."
                         link="/"
                         type="Featured Project"
-                        img={project1}
-                        github="https://github.com/vilar07/Web_Portfolio"
-                        />
-                    </div>
-                    <div className='col-span-6 sm:col-span-12'>
-                        <Project
-                        title="Web Portfolio"
-                        link="/"
-                        type="Featured Project"
-                        img={project1}
-                        github="https://github.com/vilar07/Web_Portfolio"
-                        />
-                    </div>
-                    <div className='col-span-6 sm:col-span-12'>
-                        <Project
-                        title="Web Portfolio"
-                        link="/"
-                        type="Featured Project"
-                        img={project1}
-                        github="https://github.com/vilar07/Web_Portfolio"
+                        img={servicoNutricional}
                         />
                     </div>
 

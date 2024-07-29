@@ -31,8 +31,8 @@ export default function Home() {
               <AnimatedText className='!text-6xl xl:!text-5xl lg:!text-center lg:!text-5xl md:!text-4xl sm:!text-3xl' 
               text="Turning Vision Into Reality With Code And Design."/>
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-              As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-              Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+              As a full-stack developer, I am dedicated to turning ideas into innovative web applications. 
+              Explore my latest projects and articles, showcasing my expertise in Nextjs, Tailwindcss, Nestjs and more.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link href="/dummy.pdf" target={"_blank"} className='flex items-center
