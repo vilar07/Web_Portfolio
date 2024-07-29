@@ -9,7 +9,7 @@ import project1 from "../../public/images/projects/web_portfolio.jpg"
 import project2 from "../../public/images/projects/webAppFinder.jpg"
 import project3 from "../../public/images/projects/petLink.jpg"
 import svcortinados from "../../public/images/projects/svcortinados.png"
-import servicoNutricional from "../../public/images/projects/servicoNutricional.png"
+import servicoNutricional from "../../public/images/projects/serviconutricional.png"
 import TransitionEffect from '@/components/TransitionEffect'
 
 
