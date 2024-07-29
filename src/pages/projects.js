@@ -10,6 +10,7 @@ import project2 from "../../public/images/projects/webAppFinder.jpg"
 import project3 from "../../public/images/projects/petLink.jpg"
 import svcortinados from "../../public/images/projects/svcortinados.png"
 import servicoNutricional from "../../public/images/projects/serviconutricional.png"
+import petseeker from "../../public/images/projects/petseeker.png"
 import TransitionEffect from '@/components/TransitionEffect'
 
 
@@ -92,7 +93,7 @@ const projects = () => {
             <Layout className='pt-16'>
                 <AnimatedText text="Imagination Trumps Knowledge!" className='text-center mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
 
-                <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
+                <div className='grid grid-cols-12 gap-24 gap-y-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <FeaturedProject
                         title="Web Portfolio"
@@ -113,6 +114,24 @@ const projects = () => {
                         img={svcortinados}
                         />
                     </div>
+                    <div className='col-span-12 '>
+                        <FeaturedProject
+                        title="Nutritional Service"
+                        summary="This is a full stack website, with dashboard for nutritionists to create content for the app and to manage users. It was developed algorithms for prediction and recommendation. It was built using Next.js, Tailwind CSS, Framer Motion, Nestjs, Mysql."
+                        link="https://www.youtube.com/watch?v=7_4gtJnHXF0"
+                        type="Featured Project"
+                        img={servicoNutricional}
+                        />
+                    </div>
+                    <div className='col-span-12 '>
+                        <FeaturedProject
+                        title="Pet Seeker"
+                        summary="This is a full stack website. It was built using Next.js, Tailwind CSS, Framer Motion, REST APIs (5 micro services), API Gateway, Mysql, and many (like 5) AWS Services as well as cloud infraestructure."
+                        link="https://www.youtube.com/watch?v=b2KDB5k_IA4"
+                        type="Featured Project"
+                        img={petseeker}
+                        />
+                    </div>
                     <div className='col-span-6 sm:col-span-12'>
                         <Project
                         title="Event Finder"
@@ -131,17 +150,6 @@ const projects = () => {
                         github="https://github.com/vilar07/Web_Portfolio"
                         />
                     </div>
-                    <div className='col-span-12 '>
-                        <FeaturedProject
-                        title="Nutritional Service"
-                        summary="This is a full stack website, with dashboard for nutritionists to create content for the app and to manage users. It was developed algorithms for prediction and recommendation. It was built using Next.js, Tailwind CSS, Framer Motion, Nestjs, Mysql."
-                        link="/"
-                        type="Featured Project"
-                        img={servicoNutricional}
-                        />
-                    </div>
-
-
                 </div>
 
             </Layout>
