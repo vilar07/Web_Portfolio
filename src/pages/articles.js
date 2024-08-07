@@ -52,7 +52,7 @@ const articles = () => {
         <main className='flex w-full flex-col items-center justify-center'>
             <Layout className='pt-16'>
                 <AnimatedText text='Words Can Change the World' className='mb-16 text-center lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
-                <div className='w-full grid grid-cols-1 lg:grid-cols-2 gap-16'>
+                <div className='w-full flex flex-col lg:grid-cols-2 gap-16'>
                     <div className='w-full'>
                         <FeaturedProject
                         title="Nutritional Service System"

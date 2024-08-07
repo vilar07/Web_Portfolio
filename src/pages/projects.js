@@ -12,6 +12,64 @@ import svcortinados from "../../public/images/projects/svcortinados.png"
 import servicoNutricional from "../../public/images/projects/serviconutricional.png"
 import petseeker from "../../public/images/projects/petseeker.png"
 import TransitionEffect from '@/components/TransitionEffect'
+import { motion } from 'framer-motion'
+
+const enterFromLeft = {
+    initial: {
+      opacity: 0,
+      scale: 0.6,
+      x:-200
+    },
+    animate: {
+      opacity: 1,
+      scale: 1,
+      x:0,
+      transition: {
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+        duration: 10,
+      },
+    },
+  };
+  
+  const enterFromRight = {
+    initial: {
+      opacity: 0,
+      scale: 0.6,
+      x:200
+    },
+    animate: {
+      opacity: 1,
+      scale: 1,
+      x:0,
+      transition: {
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+        duration: 10,
+      },
+    },
+  };
+
+  const enterFromBelow = {
+    initial: {
+      opacity: 0,
+      scale: 0.8,
+      y:200
+    },
+    animate: {
+      opacity: 1,
+      scale: 1,
+      y:0,
+      transition: {
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+        duration: 5,
+      },
+    },
+  };
 
 
 const FeaturedProject = ({type, title, summary, img, link = '', github = ''}) => {
@@ -19,7 +77,7 @@ const FeaturedProject = ({type, title, summary, img, link = '', github = ''}) =>
         <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:border-light dark:bg-dark shadow-2xl p-12 relative
         rounded-br-2xl dark:text-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4
         '>
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl dark:text-light
+            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem]  rounded-br-3xl dark:text-light
             xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]
             '/>
             <Link href={link} target="_blank"
@@ -55,7 +113,7 @@ const Project = ({type, title, img, link = '', github = ''}) => {
         border-solid border-dark bg-light dark:border-light dark:bg-dark p-6 relative
         xs:p-4
         '>
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl
+            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem]  rounded-br-3xl
             md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]
             '/>
             <Link href={link} target="_blank"
@@ -105,7 +163,7 @@ const projects = () => {
                         />
                     </div>
                     
-                    <div className='col-span-12 '>
+                    <motion.div className='col-span-12' variants={enterFromBelow} initial="initial" whileInView="animate" viewport={{once:true,}}>
                         <FeaturedProject
                         title="Silvia Vilar Cortinados"
                         summary="This is an simple website with admin authentication and dasboard to admin to create and manage publications. It was built using Next.js, Tailwind CSS, Framer Motion, Nestjs, Mysql and for cloud Aws and Vercel."
@@ -113,8 +171,8 @@ const projects = () => {
                         type="Featured Project"
                         img={svcortinados}
                         />
-                    </div>
-                    <div className='col-span-12 '>
+                    </motion.div>
+                    <motion.div className='col-span-12' variants={enterFromBelow} initial="initial" whileInView="animate" viewport={{once:true,}}>
                         <FeaturedProject
                         title="Nutritional Service"
                         summary="This is a full stack website, with dashboard for nutritionists to create content for the app and to manage users. It was developed algorithms for prediction and recommendation. It was built using Next.js, Tailwind CSS, Framer Motion, Nestjs, Mysql."
@@ -122,8 +180,8 @@ const projects = () => {
                         type="Featured Project"
                         img={servicoNutricional}
                         />
-                    </div>
-                    <div className='col-span-12 '>
+                    </motion.div>
+                    <motion.div className='col-span-12' variants={enterFromBelow} initial="initial" whileInView="animate" viewport={{once:true,}}>
                         <FeaturedProject
                         title="Pet Seeker"
                         summary="This is a full stack website. It was built using Next.js, Tailwind CSS, Framer Motion, REST APIs (5 micro services), API Gateway, Mysql, and many (like 5) AWS Services as well as cloud infraestructure."
@@ -131,8 +189,8 @@ const projects = () => {
                         type="Featured Project"
                         img={petseeker}
                         />
-                    </div>
-                    <div className='col-span-6 sm:col-span-12'>
+                    </motion.div>
+                    <motion.div className='col-span-6 sm:col-span-12' variants={enterFromLeft} initial="initial" whileInView="animate" viewport={{once:true,}}>
                         <Project
                         title="Event Finder"
                         link="/"
@@ -140,8 +198,8 @@ const projects = () => {
                         img={project2}
                         github="https://github.com/vilar07/Web_Portfolio"
                         />
-                    </div>
-                    <div className='col-span-6 sm:col-span-12'>
+                    </motion.div>
+                    <motion.div className='col-span-6 sm:col-span-12' variants={enterFromRight} initial="initial" whileInView="animate" viewport={{once:true,}}>
                         <Project
                         title="PetLink"
                         link="/"
@@ -149,7 +207,7 @@ const projects = () => {
                         img={project3}
                         github="https://github.com/vilar07/Web_Portfolio"
                         />
-                    </div>
+                    </motion.div>
                 </div>
 
             </Layout>
