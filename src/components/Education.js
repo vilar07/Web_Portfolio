@@ -13,13 +13,13 @@ const Details = ({position, company, companyLink, time, address, work}) => {
             whileInView={{y:0}}
             transition={{duration:0.5, type:'spring'}}
             >
-                <h3 className='capitalize font-bold text-2xl'>{position}&nbsp;<a href={companyLink}
+                <h3 className='text-2xl font-bold capitalize'>{position}&nbsp;<a href={companyLink}
                  target='_blank'
-                 className='text-green dark:text-primaryDark capitalize'>@{company}</a></h3>
-                <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
+                 className='capitalize text-green dark:text-primaryDark'>@{company}</a></h3>
+                <span className='font-medium capitalize text-dark/75 dark:text-light/75'>
                     {time} | {address}
                 </span>
-                <p className='font-medium w-full'>
+                <p className='w-full font-medium'>
                     {work}
                 </p>
             </motion.div>   
@@ -46,7 +46,7 @@ const Education = () => {
             <motion.div
             style={{scaleY: scrollYProgress}}
             className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top'/>
-                <ul className='w-full flex flex-col items-center justify-between ml-12'>
+                <ul className='flex flex-col items-center justify-between w-full ml-12'>
                     <Details 
                     position="Student" company="Aveiro University" companyLink="https://www.ua.pt/"
                     time="2019-2022" address="Universidade de Aveiro, 3810-193 Aveiro"
@@ -57,6 +57,12 @@ const Education = () => {
                     position="Student" company="Aveiro University" companyLink="https://www.ua.pt/"
                     time="2022-2024" address="Universidade de Aveiro, 3810-193 Aveiro"
                     work="Completed a master's degree in computer engineering and telematics"               
+                    /> 
+
+                    <Details 
+                    position="Internship" company="Wish & Cook" companyLink="https://wishandcook.com/pt"
+                    time="2023-2024" address="3810-193 Aveiro"
+                    work="Dissertation Internship at Wish & Cook"               
                     /> 
                 </ul>
         </div>
