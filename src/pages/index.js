@@ -10,8 +10,10 @@ import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 import TransitionEffect from '@/components/TransitionEffect';
 import LoopingText from '@/components/LoopingText';
 import { motion } from 'framer-motion';
+import TextRotator from '@/components/TextRotator';
 
 export default function Home() {
+  const words = ["Fullstack Developer", "Cloud Engineer", "Network Engineer"];
   return (
     <>
       <Head>
@@ -36,6 +38,7 @@ export default function Home() {
                 className='w-full !text-3xl xl:!text-4xl lg:!text-3xl md:!text-2xl sm:!text-xl sm:px-2 lg:hidden' 
                 text="Hi, my name is Tiago and I am a Full Stack Web Developer"
               />
+               {/* <TextRotator words={words} interval={2000} className='w-full !text-3xl xl:!text-4xl lg:!text-3xl md:!text-2xl sm:!text-xl sm:px-2 lg:hidden'/> */}
               <AnimatedText 
                 className='!text-5xl xl:!text-4xl lg:!text-4xl md:!text-3xl sm:!text-2xl sm:px-2' 
                 text="Turning Vision Into Reality With Code And Design."
