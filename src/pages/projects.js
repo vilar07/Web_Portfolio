@@ -95,8 +95,10 @@ const FeaturedProject = ({type, title, summary, img, link = '', github = ''}) =>
                 
                 <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
                 <div className='flex items-center mt-2'>
-                    <Link href={github} target="_blank" className='w-10'><GithubIcon/></Link>
-                    <Link href={link} target="_blank" className='p-2 px-6 ml-4 text-lg font-semibold border-2 border-solid rounded-lg bg-dark dark:bg-light text-light dark:text-dark hover:bg-light hover:text-dark border-dark hover:dark:border-light hover:dark:text-light hover:dark:bg-dark sm:px-4 sm:text-base'>Visit Website</Link>
+                    {github !== '' && (
+                      <Link href={github} target="_blank" className='w-10 mr-4'><GithubIcon/></Link>
+                    )}   
+                    <Link href={link} target="_blank" className='p-2 px-6  text-lg font-semibold border-2 border-solid rounded-lg bg-dark dark:bg-light text-light dark:text-dark hover:bg-light hover:text-dark border-dark hover:dark:border-light hover:dark:text-light hover:dark:bg-dark sm:px-4 sm:text-base'>Visit Website</Link>
                 </div>
             </div>
         </article>
@@ -122,9 +124,11 @@ const Project = ({type, title, img, link = '', github = ''}) => {
                     </Link>
 
                 <div className='flex items-center justify-between w-full mt-2'>
-                    <Link href={link} target="_blank" className='text-lg font-semibold underline md:text-base'>Visit</Link>
-                    <Link href={github} target="_blank" className='w-8 md:w-6'><GithubIcon/></Link>
-                    
+                    {github !== '' ? (
+                      <Link href={github} target="_blank" className='w-10 mr-4'><GithubIcon/></Link>
+                    ) : (
+                      <div className='w-10 h-10 mr-4'></div>
+                    )}   
                 </div>
             </div>
         </article>
@@ -171,6 +175,7 @@ const projects = () => {
                         summary="This is a full stack website, with dashboard for nutritionists to create content for the app and to manage users. It was developed algorithms for prediction and recommendation. It was built using Next.js, Tailwind CSS, Framer Motion, Nestjs, Mysql."
                         link="https://www.youtube.com/watch?v=7_4gtJnHXF0"
                         type="Featured Project"
+                        github='https://github.com/vilar07'
                         img={servicoNutricional}
                         />
                     </motion.div>
@@ -189,7 +194,7 @@ const projects = () => {
                         link="/"
                         type="Featured Project"
                         img={project2}
-                        github="https://github.com/vilar07/Web_Portfolio"
+                        github="https://github.com/EgsEventFinder/WebAppEventFinder"
                         />
                     </motion.div>
                     <motion.div className='col-span-6 sm:col-span-12' variants={enterFromRight} initial="initial" whileInView="animate" viewport={{once:true,}}>
@@ -198,7 +203,6 @@ const projects = () => {
                         link="/"
                         type="Featured Project"
                         img={project3}
-                        github="https://github.com/vilar07/Web_Portfolio"
                         />
                     </motion.div>
                 </div>
