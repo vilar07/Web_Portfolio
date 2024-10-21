@@ -11,6 +11,7 @@ import project3 from "../../public/images/projects/petLink.jpg"
 import svcortinados from "../../public/images/projects/svcortinados.png"
 import servicoNutricional from "../../public/images/projects/serviconutricional.png"
 import petseeker from "../../public/images/projects/petseeker.png"
+import spotifyClone from "../../public/images/projects/SpotifyClone.png"
 import TransitionEffect from '@/components/TransitionEffect'
 import { motion } from 'framer-motion'
 
@@ -114,7 +115,7 @@ const Project = ({type, title, img, link = '', github = ''}) => {
             <Link href={link} target="_blank"
             className='w-full rounded-lg cursor-pointer overflow-fidden'
             >
-                <Image src={img} alt={title} className='w-full h-auto border rounded-2xl'/>
+                <Image src={img} alt={title} className='w-full h-[400px] border rounded-2xl'/>
             </Link>
 
             <div className='flex flex-col items-start justify-between w-full mt-4'>
@@ -182,13 +183,22 @@ const projects = () => {
                     <motion.div className='col-span-12' variants={enterFromBelow} initial="initial" whileInView="animate" viewport={{once:true,}}>
                         <FeaturedProject
                         title="Pet Seeker"
-                        summary="This is a full stack website. It was built using Next.js, Tailwind CSS, Framer Motion, REST APIs (5 micro services), API Gateway, Mysql, and many (like 5) AWS Services as well as cloud infraestructure."
+                        summary="This is a full stack website. It was built using Next.js, Tailwind CSS, Framer Motion, REST APIs (5 micro services), API Gateway, Mysql, and many (like 5) AWS Services as well as cloud infrastructure."
                         link="https://www.youtube.com/watch?v=b2KDB5k_IA4"
                         type="Featured Project"
                         img={petseeker}
                         />
                     </motion.div>
                     <motion.div className='col-span-6 sm:col-span-12' variants={enterFromLeft} initial="initial" whileInView="animate" viewport={{once:true,}}>
+                        <Project
+                        title="Spotify Clone"
+                        link="/"
+                        type="Featured Project"
+                        img={spotifyClone}
+                        github="https://github.com/vilar07/Spotify-Html-Css-Clone"
+                        />
+                    </motion.div>
+                    <motion.div className='col-span-6 sm:col-span-12' variants={enterFromRight} initial="initial" whileInView="animate" viewport={{once:true,}}>
                         <Project
                         title="Event Finder"
                         link="/"
@@ -197,7 +207,7 @@ const projects = () => {
                         github="https://github.com/EgsEventFinder/WebAppEventFinder"
                         />
                     </motion.div>
-                    <motion.div className='col-span-6 sm:col-span-12' variants={enterFromRight} initial="initial" whileInView="animate" viewport={{once:true,}}>
+                    <motion.div className='col-span-6 sm:col-span-12' variants={enterFromLeft} initial="initial" whileInView="animate" viewport={{once:true,}}>
                         <Project
                         title="PetLink"
                         link="/"
