@@ -10,6 +10,7 @@ import project2 from "../../public/images/projects/webAppFinder.jpg"
 import project3 from "../../public/images/projects/petLink.jpg"
 import svcortinados from "../../public/images/projects/svcortinados.png"
 import servicoNutricional from "../../public/images/projects/serviconutricional.png"
+import amigoDosAnimais from "../../public/images/projects/amigoDosAnimais.png"
 import petseeker from "../../public/images/projects/petseeker.png"
 import spotifyClone from "../../public/images/projects/SpotifyClone.png"
 import TransitionEffect from '@/components/TransitionEffect'
@@ -96,10 +97,12 @@ const FeaturedProject = ({type, title, summary, img, link = '', github = ''}) =>
                 
                 <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
                 <div className='flex items-center mt-2'>
-                    {github !== '' && (
-                      <Link href={github} target="_blank" className='w-10 mr-4'><GithubIcon/></Link>
-                    )}   
+                  {github !== '' && (
+                    <Link href={github} target="_blank" className='w-10 mr-4'><GithubIcon/></Link>
+                  )}  
+                  {link !== '' && (
                     <Link href={link} target="_blank" className='p-2 px-6  text-lg font-semibold border-2 border-solid rounded-lg bg-dark dark:bg-light text-light dark:text-dark hover:bg-light hover:text-dark border-dark hover:dark:border-light hover:dark:text-light hover:dark:bg-dark sm:px-4 sm:text-base'>Visit Website</Link>
+                  )}  
                 </div>
             </div>
         </article>
@@ -159,8 +162,7 @@ const projects = () => {
                         img={project1}
                         github="https://github.com/vilar07/Web_Portfolio"
                         />
-                    </div>
-                    
+                    </div>  
                     <motion.div className='col-span-12' variants={enterFromBelow} initial="initial" whileInView="animate" viewport={{once:true,}}>
                         <FeaturedProject
                         title="Silvia Vilar Cortinados"
@@ -168,6 +170,14 @@ const projects = () => {
                         link="https://svcortinados.com"
                         type="Featured Project"
                         img={svcortinados}
+                        />
+                    </motion.div>
+                    <motion.div className='col-span-12' variants={enterFromBelow} initial="initial" whileInView="animate" viewport={{once:true,}}>
+                        <FeaturedProject
+                        title="Amigo Dos Animais"
+                        summary="This is a platform to adopt or to put an animal for adoption. It is built for animal institutions and animal lovers. Has features like authentication, profile management, animals management, etc. It was built using Next.js, Tailwind CSS, Framer Motion, Nestjs, Mysql."
+                        type="Featured Project - Its not deployed yet"
+                        img={amigoDosAnimais}
                         />
                     </motion.div>
                     <motion.div className='col-span-12' variants={enterFromBelow} initial="initial" whileInView="animate" viewport={{once:true,}}>
