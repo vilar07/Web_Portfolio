@@ -64,6 +64,12 @@ const Education = () => {
                     time="2023-2024" address="3810-193 Aveiro"
                     work="Dissertation Internship at Wish & Cook"               
                     /> 
+
+                    <Details 
+                    position="Employee" company="Altice Labs" companyLink="https://www.alticelabs.com/"
+                    time="2025-Now" address="3810-106 Aveiro"
+                    work="Junior DevOps Engineer"               
+                    /> 
                 </ul>
         </div>
     </div>

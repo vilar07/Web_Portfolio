@@ -36,7 +36,7 @@ export default function Home() {
             <div className='flex flex-col items-center self-center w-1/2 lg:w-full lg:text-center'>
               <LoopingText 
                 className='w-full !text-3xl xl:!text-4xl lg:!text-3xl md:!text-2xl sm:!text-xl sm:px-2 lg:hidden' 
-                text="Hi, my name is Tiago and I am a Full Stack Web Developer"
+                text="Hi, my name is Tiago and I am a Full Stack Web Developer and DevOps Engineer at AlticeLabs"
               />
                {/* <TextRotator words={words} interval={2000} className='w-full !text-3xl xl:!text-4xl lg:!text-3xl md:!text-2xl sm:!text-xl sm:px-2 lg:hidden'/> */}
               <AnimatedText 
@@ -46,6 +46,7 @@ export default function Home() {
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs sm:px-2'>
                 As a full-stack developer, I am dedicated to turning ideas into innovative web applications. 
                 Explore my latest projects and articles, showcasing my expertise in Nextjs, Tailwindcss, Nestjs and more.
+                Currently, i work at Altice Labs in Aveiro as a DevOps Engineer.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link 
@@ -67,7 +68,7 @@ export default function Home() {
         </Layout>
         <HireMe />
         <motion.div 
-          className='absolute inline-block w-24 right-8 bottom-8 md:hidden'
+          className='absolute inline-block w-24 right-8 bottom-0 md:hidden'
           initial={{ scale: 1 }}
           animate={{ scale: [1, 1.1, 1] }}
           transition={{

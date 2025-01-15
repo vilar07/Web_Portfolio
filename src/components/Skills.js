@@ -39,15 +39,16 @@ const Skills = () => {
             <Skill name="Java" x="-20vw" y="-15vw"/>
             <Skill name="Python" x="15vw" y="-12vw"/>
             <Skill name="Git" x="32vw" y="-5vw"/>
-            <Skill name="C/C++" x="-23vw" y="16vw"/>
+            <Skill name="Kubernetes" x="-23vw" y="16vw"/>
             <Skill name="Computer Networks" x="-30vw" y="-5vw"/>
             <Skill name="DataBases" x="25vw" y="15vw"/>
             <Skill name="SQL" x="0vw" y="-20vw"/>
             <Skill name="Tailwind CSS" x="-0" y="22vw"/>
             <Skill name="NestJS" x="-15vw" y="-22vw"/>
             <Skill name="AWS" x="15vw" y="-22vw"/>
-            <Skill name="Cloud" x="13vw" y="0vw"/>
-
+            <Skill name="Cloud AWS" x="13vw" y="0vw"/>
+            <Skill name="Docker" x="28vw" y="-12vw"/>
+            <Skill name="argoCD" x="30vw" y="8vw"/>
         </div>
     </>
   )

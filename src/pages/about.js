@@ -3,7 +3,7 @@ import Head from 'next/head'
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
-import profilePicTiago from "../../public/images/profile/tiagovilar.jpg";
+import profilePicTiago from "../../public/images/profile/myself.jpg";
 import Image from 'next/image';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
@@ -61,12 +61,13 @@ const about = () => {
                     whileInView={true}>
                         <h2 className='w-full mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                         <p className='w-full font-serif text-2xl font-medium break-words'>
-                        My name is Tiago Miguel Vilar Bastos and i am a 23-year-old full-stack web developer with a degree in Computer Engineering and Informatics, and a Master&apos;s degree in Computer Engineering and Telematics from the University of Aveiro.
+                            My name is Tiago Miguel Vilar Bastos, a 23-year-old DevOps engineer at Altice Labs in Aveiro. I hold a degree in Computer Engineering and Informatics and a Master's in Computer Engineering and Telematics from the University of Aveiro.
                         </p>
                         <p></p>
                         <p className='w-full font-serif text-2xl font-medium break-words'>
-                        I specialize in creating user-friendly web interfaces and robust cloud-based solutions using technologies like Next.js, NestJS, and various databases. With a passion for technology and innovation, I excel in developing efficient and scalable applications. I am committed to continuous learning and staying updated with the latest industry trends to deliver high-quality projects that drive business success.
+                            I specialize in developing user-friendly web interfaces and scalable cloud solutions, focusing on technologies like Next.js, NestJS, and various databases. Passionate about innovation, I am committed to continuous learning and delivering high-quality projects that drive business success.
                         </p>
+
                     </motion.div>
                     <motion.div className='relative col-span-3 p-8 border-2 border-solid h-max rounded-2xl border-dark bg-light dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8 '
                     initial={{ y: 200 }}
