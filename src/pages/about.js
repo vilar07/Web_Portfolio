@@ -61,7 +61,7 @@ const about = () => {
                     whileInView={true}>
                         <h2 className='w-full mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                         <p className='w-full font-serif text-2xl font-medium break-words'>
-                            My name is Tiago Miguel Vilar Bastos, a 23-year-old DevOps engineer at Altice Labs in Aveiro. I hold a degree in Computer Engineering and Informatics and a Master's in Computer Engineering and Telematics from the University of Aveiro.
+                            My name is Tiago Miguel Vilar Bastos, a 23-year-old DevOps engineer at Altice Labs in Aveiro. I hold a degree in Computer Engineering and Informatics and a Master&apos;s in Computer Engineering and Telematics from the University of Aveiro.
                         </p>
                         <p></p>
                         <p className='w-full font-serif text-2xl font-medium break-words'>
